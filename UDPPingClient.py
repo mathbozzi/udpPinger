@@ -21,7 +21,6 @@ serverHost, serverPort = sys.argv[1:]
 clientSocket = socket(AF_INET, SOCK_DGRAM)
 clientSocket.settimeout(1)
 
-
 for i in range(N):
     startTime = time()
     message = str(i+1) + " 0" + " tmtm " + name
